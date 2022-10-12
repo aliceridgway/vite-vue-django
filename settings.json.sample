@@ -1,0 +1,8 @@
+If using VScode, put this into '.vscode/settings.json' to enable linting for your project.
+{
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
+}

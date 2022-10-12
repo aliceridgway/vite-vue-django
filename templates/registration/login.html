@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Log In</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {% load widget_tweaks %}
+    {% if form.non_field_errors %}
+    <div class="alert alert-danger">
+        {{ form.non_field_errors }}
+    </div>
+    {% endif %}
+
+
+    {% for field in form %}
+    <div class="form-group mt-4 {% if field.errors %}alert alert-danger{% endif %}">
+        {{ field.errors}}
+        {{ field.label_tag }}
+        {% render_field field class="form-control" %}
+
+        {% if field.help_text %}
+        <small class="text-muted">
+            {{ field.help_text|safe }}
+        </small>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary mt-4">Log In</button>
+</form>
+
+
+
+{% endblock %}

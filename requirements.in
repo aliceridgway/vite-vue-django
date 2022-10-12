@@ -1,0 +1,6 @@
+django
+django-environ
+django-widget-tweaks
+mypy
+flake8
+black
