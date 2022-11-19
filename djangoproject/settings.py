@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_vite",
     "accounts",
+    "ui",
     "widget_tweaks",
 ]
 
@@ -62,7 +63,7 @@ ROOT_URLCONF = "djangoproject.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -134,10 +135,10 @@ LOGOUT_REDIRECT_URL = "index"
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [BASE_DIR / "ui" / "static"]
 
 # Where ViteJS assets are built.
-DJANGO_VITE_ASSETS_PATH = BASE_DIR / "static" / "dist"
+DJANGO_VITE_ASSETS_PATH = BASE_DIR / "ui" / "static" / "dist"
 
 # If use HMR or not.
 DJANGO_VITE_DEV_MODE = DEBUG
