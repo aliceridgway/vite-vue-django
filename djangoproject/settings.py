@@ -135,7 +135,7 @@ LOGOUT_REDIRECT_URL = "index"
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "ui" / "static"]
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Where ViteJS assets are built.
 DJANGO_VITE_ASSETS_PATH = BASE_DIR / "ui" / "static" / "dist"

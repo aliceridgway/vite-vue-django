@@ -1,14 +1,14 @@
 {
   "js/main.js": {
-    "file": "main.a5709c93.js",
+    "file": "main.686f047e.js",
     "src": "js/main.js",
     "isEntry": true,
     "css": [
-      "main.43eb393b.css"
+      "main.bade74a9.css"
     ]
   },
   "js/main.css": {
-    "file": "main.43eb393b.css",
+    "file": "main.bade74a9.css",
     "src": "js/main.css"
   }
 }

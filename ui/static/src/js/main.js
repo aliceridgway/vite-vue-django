@@ -1,4 +1,14 @@
 import '../css/style.css';
-import 'vite/modulepreload-polyfill'
+import 'vite/modulepreload-polyfill';
 
-console.log("Hello world")
+import { createApp } from 'vue';
+
+const app = createApp({
+    data() {
+        return {
+          vueMessage: "Hello from Vue!"
+        }
+      }
+})
+
+app.mount("#app")

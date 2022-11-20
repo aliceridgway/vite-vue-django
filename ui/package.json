@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/aliceridgway/vite-vue-django#readme",
   "dependencies": {
-    "vite": "^3.2.4"
+    "@vitejs/plugin-vue": "^3.2.0",
+    "vite": "^3.2.4",
+    "vue": "^3.2.45"
   }
 }
